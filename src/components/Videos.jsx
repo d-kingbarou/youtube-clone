@@ -3,10 +3,11 @@ import { Stack, Box } from '@mui/material';
 import VideoCard from './VideoCard';
 import ChannelCard from './ChannelCard';
 
-const Videos = ({ videos }) => {
+const Videos = ({ videos, direction }) => {
+
   return (
     <Stack 
-     direction="row" 
+     direction={ direction || "row" }
      flexWrap="wrap" 
      justifyContent="start" 
      gap={2}
